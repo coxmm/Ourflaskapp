@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>A form that sends an email!</title>
+</head>
+<body>
+
+    <h1>Hello {{name}}</h1>
+
+    <form action="/signup" method="post">
+
+        <label for="recipient">Send email to?</label><br/>
+        <input type="email" required name="recipient" id="recipient"/><br/>
+
+        <label for="body">Body of the email</label><br/>
+        <textarea name="body" id="body" required></textarea><br/>
+
+        <button type="submit">Send email now</button>
+
+    </form>
+
+</body>
+</html>
