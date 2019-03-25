@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="{{url_for("static", filename="stylesheet.css")}} ">
   <font color="white">
       <title>A form that sends an email!</title>
 </head>
@@ -14,14 +15,14 @@
 
     <form action="/signup" method="post">
 
-        <label for="recipient">Name</label><br/>
-        <textarea name="body" id="body" required></textarea><br/>
+        <label for="name">Name</label><br/>
+        <textarea name="name" id="name" required></textarea><br/>
         <br>
-        <label for="body">Dietary Requirements</label><br/>
-        <textarea name="body" id="body" required></textarea><br/>
+        <label for="food">Dietary Requirements</label><br/>
+        <textarea name="food" id="food" required></textarea><br/>
         <br>
         <label for="body">E-mail address</label><br/>
-        <input type="email" required name="recipient" id="recipient"/><br/>
+        <input type="email" required name="email" id="email"/><br/>
         <br>
         <button type="submit">Send email now</button>
           </font>

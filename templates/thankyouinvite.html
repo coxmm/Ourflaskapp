@@ -1,14 +1,16 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="{{ url_for("static",
-flename="stylesheet.css") }}">
+  <link rel="stylesheet" type="text/css" href="{{url_for("static", filename="stylesheet.css")}} ">
+  <font color="white">
       <title>A form that sends an email!</title>
 </head>
 <body>
 
   <div align="center">
-
+    <h1> Thank you {{name}}</h1>
+    <h4> You asked for {{food}} </h4>
+    <h4> We'll send you an email to: {{email}}</h4>
 
 </font>
 </div>
