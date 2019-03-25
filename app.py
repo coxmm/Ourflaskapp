@@ -19,4 +19,4 @@ def sign_up():
     # TODO: send email with mailgun
     return render_template ("thankyouinvite.html", food=food, name=name, email=email)
 
-#app.run(debug=True)
+app.run(debug=True)
