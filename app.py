@@ -30,4 +30,5 @@ def sign_up():
                   "text": form_data["food"]})
     return render_template ("thankyouinvite.html", food=food, name=name, email=email)
 
+if __name__ == "__main__":
 app.run(debug=True)
