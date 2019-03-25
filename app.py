@@ -31,4 +31,4 @@ def sign_up():
     return render_template ("thankyouinvite.html", food=food, name=name, email=email)
 
 if __name__ == "__main__":
-app.run(debug=True)
+    app.run(debug=True)
